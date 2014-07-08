@@ -1,14 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="codelab">
   <head>
     <meta charset="utf-8" />
     <title>Codelab - angularjs</title>
     <link rel="stylesheet" href="stylesheets/foundation.min.css" />
     <script src="javascripts/angular.min.js"></script>
-    <script src="app.js"></script>
+    <script src="javascripts/app.js"></script>
+    <style>
+    .ib{
+      display: inline-block;
+    }
+    </style>
   </head>
 
   <body>
     <h1>Maestro detalle angular</h1>
+    <div ng-controller="MasterController">
+      <input type="text" ng-model="name" style="width:120px; display: inline"/> Hola {{ name }}!
+    </div>
   </body>
 </html>
