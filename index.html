@@ -17,6 +17,15 @@
     <h1>Maestro detalle angular</h1>
     <div ng-controller="MasterController">
       <input type="text" ng-model="name" style="width:120px; display: inline"/> Hola {{ name }}!
+
+
+      <ul>
+        <li ng-repeat="item in items">
+          {{ item.name }}
+          <strong> {{ item.price }} </strong>
+        </li>
+      </ul>
+
     </div>
   </body>
 </html>
